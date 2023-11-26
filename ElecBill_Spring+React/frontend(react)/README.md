@@ -1,3 +1,10 @@
+import the project and then use 'npm install' to install the necessary packages.
+Start the Spring backend first and then the frontend.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
