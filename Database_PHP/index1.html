@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #34495e; /* Background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #ecf0f1; /* Text color */
+        }
+        form {
+            background: #000000; /* Form background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #3498db; /* Heading color */
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ecf0f1; /* Label text color */
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #3498db; /* Button background color */
+            color: #ecf0f1; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Button hover background color */
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" target="_self" action="action.php">
+        <h1>Student Information</h1>
+        <label for="Name">Full Name:</label>
+        <input id="Name" name="Name" type="text">
+        <label for="roll_no">Roll Number:</label>
+        <input id="roll_no" name="roll_no" type="number">
+        <label for="subject1">Enter marks of Subject 1:</label>
+        <input id="subject1" name="subject1" type="number">
+        <label for="subject2">Enter marks of Subject 2:</label>
+        <input id="subject2" name="subject2" type="number">
+        <label for="subject3">Enter marks of Subject 3:</label>
+        <input id="subject3" name="subject3" type="number">
+        <label for="subject4">Enter marks of Subject 4:</label>
+        <input id="subject4" name="subject4" type="number">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
