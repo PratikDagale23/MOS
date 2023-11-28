@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy List Contents</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Add some basic styling for demonstration purposes */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Original List</h2>
+    <ul id="originalList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- Add more items as needed -->
+    </ul>
+
+    <h2>Copied List</h2>
+    <ul id="copiedList">
+        <!-- Copied items will be added here -->
+    </ul>
+
+    <!-- jQuery code to copy contents from one list to another -->
+    <script>
+        $(document).ready(function() {
+            // Target the original list
+            var $originalList = $('#originalList');
+            
+            // Target the copied list
+            var $copiedList = $('#copiedList');
+
+            // Attach a click event to each item in the original list
+            $originalList.on('click', 'li', function() {
+                // Clone the clicked item
+                var $clone = $(this).clone();
+
+                // Append the cloned item to the copied list
+                $copiedList.append($clone);
+            });
+        });
+    </script>
+
+</body>
+</html>
